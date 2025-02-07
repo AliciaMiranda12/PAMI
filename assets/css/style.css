@@ -1,0 +1,8 @@
+.bg-custom{
+    background: rgb(255,98,98);
+background: linear-gradient(90deg, rgba(255,98,98,1) 0%, rgba(255,0,101,1) 15%, rgba(114,222,242,1) 100%);
+}
+.nav-brand,
+.nav-link{
+    color: rgb(0, 0, 0);
+}
