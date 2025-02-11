@@ -1,6 +1,17 @@
+:root{
+    --primary-color: #fc6405;    /* -- criar variável*/
+    --second-color:#E3BB93 ;
+    --tertiary-color: #e9b24c;
+    --quaternary-color:#a55f30 ;
+    --quinary-color: #c09375;
+    --light-color: #a3a3a3;
+    --medium-color: #4d4c4c ;
+    --dark-color:  #202020; /*mouse na cor para mudar*/
+
+}
 .bg-custom{
-    background: rgb(255,98,98);
-background: linear-gradient(90deg, rgba(255,98,98,1) 0%, rgba(255,0,101,1) 15%, rgba(114,222,242,1) 100%);
+    background: var(--quaternary-color);
+    background: linear-gradient(90deg,var(--second-color) 0%, var(--tertiary-color) 15%, var(--primary-color) 100%);
 }
 .nav-brand,
 .nav-link{
