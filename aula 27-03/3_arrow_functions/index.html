@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        let segundos = 0;
+        let minutos = 0;
+        let horas = 0;
+        let timer = document.createElement ('h1');
+        timer.style.fontSize = '100px'
+
+
+        setInterval (() => {
+            segundos++;
+            if(segundos % 2 == 0)
+               document.querySelector('body').style.backgroundColor = 'red'
+            
+            else
+                document.querySelector('body').style.backgroundColor = 'blue'
+            
+            if (segundos > 59) {
+            minutos++;
+            segundos = 0;
+           }
+            if (minutos > 59) {
+            horas ++;
+            minutos = 0;
+          }
+         
+
+          timer.innerText = horas + ':' + minutos + ':' + segundos;
+          
+           
+          
+        },1000);
+
+        document.querySelector ('body').appendChild(timer);
+        //forma de fazer repetição de tela
+    </script>
+</body>
+</html>

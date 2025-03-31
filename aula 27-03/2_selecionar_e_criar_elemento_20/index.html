@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Elemento</title>
+</head>
+<body>
+    
+    <button onclick="addVeiculo1()">Adicionar Fusca</button>
+    <button onclick="addVeiculo2()">Adicionar Ferrari</button>
+    <button onclick="addVeiculo3()">Adicionar Uno</button>
+    <button onclick="addVeiculo4()">Adicionar Avião</button>
+    <div id="estacionamento"></div>
+
+    <script>
+        function addVeiculo1(){
+            let veiculo_1 = document.createElement ('h1') //modo camelCase, ou seja é uma função
+            veiculo_1.innerText = 'Fusca';
+            veiculo_1.style.color = 'white';
+            veiculo_1.style.backgroundColor = '#802B00';
+            veiculo_1.style.fontSize = '28px';
+            veiculo_1.style.fontFamily ='font-family: "Sacramento", cursive;';
+            document.querySelector('#estacionamento').appendChild(veiculo_1);
+
+            let imagem = document.createElement ('img')
+            imagem.setAttribute ('src', 'https://i.pinimg.com/736x/5b/d2/d2/5bd2d28f2ed1b480461d44eae7c1b589.jpg')
+            document.querySelector('#estacionamento').appendChild(imagem);
+
+            let passageiro = document.createElement ('img')
+            imagem.setAttribute ('src', 'https://i.pinimg.com/236x/f2/f0/15/f2f01562d96ebc9778217bea5df846d3.jpg')
+            document.querySelector('#estacionamento').appendChild(passageiro);
+        }
+
+
+        function addVeiculo2(){
+            let veiculo_2 = document.createElement ('h1') 
+            veiculo_2.innerText = 'Ferrari';
+            veiculo_2.style.color = 'white';
+            veiculo_2.style.backgroundColor = 'pink';
+            veiculo_2.style.fontSize = '28px';
+            veiculo_2.style.fontFamily ='font-family: "Sacramento", cursive;';
+            document.querySelector('#estacionamento').appendChild(veiculo_2);  
+
+            let imagem = document.createElement ('img')
+            imagem.setAttribute ('src', 'https://i.pinimg.com/736x/ba/fc/e7/bafce7a7d2aa6bca037db404e77a9433.jpg')
+            document.querySelector('#estacionamento').appendChild(imagem);
+
+            let passageiro = document.createElement ('img')
+            imagem.setAttribute ('src', 'https://i.pinimg.com/736x/92/86/6c/92866c6371b642e695c1aed0bb533af6.jpg')
+            document.querySelector('#estacionamento').appendChild(passageiro);
+        }
+
+
+        function addVeiculo3(){
+            let veiculo_3 = document.createElement ('h1') 
+            veiculo_3.innerText = 'Uno';
+            veiculo_3.style.color = 'white';
+            veiculo_3.style.backgroundColor = 'black';
+            veiculo_3.style.fontSize = '28px';
+            veiculo_3.style.fontFamily ='font-family: "Sacramento", cursive;';
+            document.querySelector('#estacionamento').appendChild(veiculo_3);
+
+            let imagem = document.createElement ('img')
+            imagem.setAttribute ('src', 'https://i.pinimg.com/736x/52/8d/01/528d01c7dcab0e63d54f812da195e57b.jpg')
+            document.querySelector('#estacionamento').appendChild(imagem);
+
+            let passageiro = document.createElement ('img')
+            imagem.setAttribute ('src', 'https://i.pinimg.com/736x/56/48/20/56482008405835736642eb7629de85ec.jpg')
+            document.querySelector('#estacionamento').appendChild(passageiro);
+        }
+
+
+        function addVeiculo4(){
+            let veiculo_4 = document.createElement ('h1') 
+            veiculo_4.innerText = 'Avião';
+            veiculo_4.style.color = 'white';
+            veiculo_4.style.backgroundColor = '#77A6A1';
+            veiculo_4.style.fontSize = '28px';
+            veiculo_4.style.fontFamily ='font-family: "Sacramento", cursive;';
+            document.querySelector('#estacionamento').appendChild(veiculo_4);
+
+            let imagem = document.createElement ('img')
+            imagem.setAttribute ('src', 'https://i.pinimg.com/736x/bd/9e/98/bd9e98aff7cbbca99e041e4f97742f16.jpg')
+            document.querySelector('#estacionamento').appendChild(imagem);
+
+            let passageiro = document.createElement ('img')
+            imagem.setAttribute ('src', 'https://i.pinimg.com/736x/83/39/21/83392137a1b0f639de8c3a9b1e87f9b2.jpg')
+            document.querySelector('#estacionamento').appendChild(passageiro);
+        }
+   
+    
+    </script>
+</body>
+</html>

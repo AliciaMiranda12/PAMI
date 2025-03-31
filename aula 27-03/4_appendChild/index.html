@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quarto dos horrores</title>
+</head>
+<body>
+    <center><img src="ligado.jpg" id="interruptor" onclick="acionarInterruptor()">
+    <img src="lampligada.jpg" id="lampadinha" onclick="acionarInterruptor()">
+<img src="gatinho.png" id="gatinho" onclick="acionarInterruptor()"> </center> 
+
+    <script>
+        //onclick chama a função e precisa ter um ()
+
+        let acionado = true; 
+        let lampada =  true;
+        let fofo = true;
+        
+        function acionarInterruptor(){
+
+        let interruptor = document.querySelector('#interruptor');
+        let body = document.querySelector('body');
+
+        if(acionado == true){
+        interruptor.setAttribute('src', './desligado.jpg'); //src atributo
+        lampadinha.setAttribute('src', './lampdesligada.jpg'); //src atributo
+        gatinho.setAttribute('src','./anabelle.webp')
+
+        body.style.backgroundColor = 'black';
+    }
+        else{
+        interruptor.setAttribute('src', './ligado.jpg'); //src atributo
+        lampadinha.setAttribute('src', './lampligada.jpg'); //src atributo
+        gatinho.setAttribute('src','./gatinho.png')
+
+        body.style.backgroundColor = 'white';
+    }
+
+    acionado = !acionado
+     }
+    </script>
+    
+</body>
+</html>
