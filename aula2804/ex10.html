@@ -7,7 +7,30 @@
 </head>
 <body>
     <script>
-        
+          let personagem = [
+        ["Nome: Batman", "Idade: 40 " ,"Peso: 70", "Altura: 1.75", "Poder: Rico", "Profissão: Empresário "],
+        ["Nome: Homem-Aranha", "Idade: 20", "Peso: 60", "Altura: 1.60", "Poder: Sentido Aranha", "Profissão: Estudante"],
+        ["Nome: Wanda", "Idade: 30", "Peso: 55", "Altura: 1.80", "Poder: Magia", "Profissão: Vingadora "],
+    ];
+
+
+    personagem.push(["Nome: Homem de Ferro", "Idade: 40", "Peso: 68", "Altura: 1.70", "Poder: Inteligência", "Profissão: Engenheiro"]),
+    personagem.push(["Nome: Viúva Negra", "Idade: 35", "Peso: 60", "Altura:1.60", "Poder: Resistência", "Profissão: Espiã "]),
+    personagem.push(["Nome: Visão", "Idade: 36", "Peso: 75", "Altura: 1.60", "Poder: Telepatia", "Profissão: Android "])
+
+
+
+
+    personagem.splice(2, 1);
+  
+
+        personagem.forEach(valores => {
+        valores.forEach((subarray, index) =>{
+            document.writeln(subarray + "<br>" );
+        })
+        document.writeln("<br>");
+    });
+        //Não consegui colocar imagem
     </script>
     
 </body>
