@@ -1,0 +1,57 @@
+<script>
+   
+    // let alunos =[{
+    //     nome : "Alicia",
+    //     idade: 16,
+    //     email: "alicia@gmail.com",
+    //     telefone: 123
+    // },
+    // {
+    //     nome : "Giovana",
+    //     idade: 16,
+    //     email: "giovanaw@gmail.com",
+    //     telefone: 456
+    // }
+    // ]
+    // alunos.forEach(valor => {
+    //     console.log(valor.nome);
+        
+    // });
+
+
+    let zoologico = [
+        {
+            nome_animal: "Jacaré",
+            cor: "Rosa",
+            peso: "150kg",
+            altura: "40cm",
+            comprimento: "1.8m",
+            nadar: function () {console.log("Nadou!")},
+            pular: function() {console.log("Pulou!")}
+        },
+        { 
+            nome_animal: "Cobra",
+            cor: "Preta",
+            peso: "10kg",
+            altura: "20cm",
+            comprimento: "2 metros",
+            nadar: function () {console.log("Nadou!")},
+            pular: function() {console.log("Pulou!")}
+        },
+        { nome_animal: "Perereca",
+            cor: "Azul",
+            peso: "150g",
+            altura: "10cm",
+            comprimento: "20cm",
+            nadar: function () {console.log("Nadou!")},
+            pular: function() {console.log("Pulou!")}
+        }
+    ];
+
+    zoologico.forEach(animal => {
+        console.log(`Nome: ${animal.nome_animal}`);
+        console.log(`Cor: ${animal.cor}`);
+        console.log(`Peso: ${animal.peso}`);
+        console.log(`########################`);
+    });
+</script>
