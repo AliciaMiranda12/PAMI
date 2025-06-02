@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let palavra = prompt("Digite uma palavra:");
+    let caractere = prompt("Digite o caractere:");
+
+    let contador = 0;  
+    let posicoes = [];
+
+    for (let i = 0; i < palavra.length; i++) {
+        palavra.charAt(i) === caractere && (contador++, posicoes.push(i));
+    }
+
+   console.log("O caractere " + caractere + " aparece na posição: " + posicoes);
+   
+    </script>
+    
+</body>
+</html>
