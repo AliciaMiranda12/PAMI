@@ -7,18 +7,22 @@
 </head>
 <body>
     <script>
+        
         let palavra = "Abacaxi";
         let caractere = prompt("Digite um caractere:");
-        let encontrar = false;
-
-        for (let i = 0; i < palavra.length; i++) {
-            if (palavra[i] === caractere) {
-                encontrar = true;
+        palavra = palavra.split("");
+        let encontrado = false; 
+        
+        palavra.forEach(letra => {
+            if (letra === caractere) {
+                encontrado = true;
             }
+        });
+        if (encontrado) {
+            console.log("Existe!");
+        } else {
+            console.log("Não existe!");
         }
-        alert(encontrar ? "Esse caractere existe!" : "Esse caractere não existe!");
-
-
     </script> 
 </body>
 </html>

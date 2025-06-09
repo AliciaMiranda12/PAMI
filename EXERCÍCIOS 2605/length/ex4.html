@@ -7,21 +7,25 @@
 </head>
 <body>
     <script>
-        let numero = "15996059279";
+        let usuarioNumero = prompt("Digite o número de telefone:");
+        
+        telefoneValidar(usuarioNumero);
 
-        numero1 = numero.split("");
+        function telefoneValidar(numeroTelefone){
+            numeroTelefone = numeroTelefone.trim().replace(/\D/g, "");
+            console.log(numeroTelefone);
 
-        numero[0];
-        numero[1];
+            if(numeroTelefone.length === 11){
+                console.log("Número de telefone válido");
+            }
+            else{
+                console.log("Número inválido.");
+            }
 
-        console.log(numero1)
-
-        if(numero1.length < 11 && numero1 != " # ","@","$"   ){
-        console.log("numero valido")
         }
-        else{
-            console.log("Numero invalido")
-}
+
+
+        
     </script>
 </body>
 </html>

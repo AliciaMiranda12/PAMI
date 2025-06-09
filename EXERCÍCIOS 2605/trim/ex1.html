@@ -7,9 +7,14 @@
 </head>
 <body>
     <script>
-        let lista = "Lista de Produtos";
-        console.log(lista.replace("Lista de Produtos","Lista de Frutas"));
-
+        let string = prompt("Digite uma mensagem:");
+        if(string == ' '+ string.trim() +' '){
+         console.log("O texto é invalido");
+        }
+        else{
+         console.log("O texto é válido");
+        }
     </script>
+    
 </body>
 </html>
