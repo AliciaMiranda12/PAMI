@@ -1,0 +1,24 @@
+
+    <script>
+        const veiculos = [
+        { nome: "Fiat Uno", ano: 2015, preco: 25000, modelo: "Uno Mille", combustivel: "Gasolina" },
+        { nome: "Volkswagen Gol", ano: 2018, preco: 32000, modelo: "Gol G6", combustivel: "Flex" },
+        { nome: "Chevrolet Onix", ano: 2025, preco: 45000, modelo: "Onix LT", combustivel: "Flex" },
+        { nome: "Ford Ka", ano: 2017, preco: 29000, modelo: "Ka SE", combustivel: "Flex" },
+        { nome: "Honda Civic", ano: 2019, preco: 78000, modelo: "Civic EXL", combustivel: "Gasolina" },
+        { nome: "Toyota Corolla", ano: 2025, preco: 95000, modelo: "Corolla Altis", combustivel: "Híbrido" },
+        { nome: "Renault Sandero", ano: 2016, preco: 27000, modelo: "Sandero Stepway", combustivel: "Flex" },
+        { nome: "Hyundai HB20", ano: 2020, preco: 52000, modelo: "HB20 Vision", combustivel: "Flex" },
+        { nome: "Jeep Renegade", ano: 2022, preco: 115000, modelo: "Renegade Longitude", combustivel: "Diesel" },
+        { nome: "Peugeot 208", ano: 2021, preco: 67000, modelo: "208 Active", combustivel: "Flex" }
+        ];
+
+        let veiculos_seminovos = veiculos.filter(veiculo => veiculo.ano <= 2024); //retorna vdd ou falso
+        let veiculos_novos = veiculos.filter(veiculo => veiculo.ano >= 2025);
+        let veiculos_classicos =  veiculos.filter(veiculo => veiculo.ano <= 2000);
+        console.log(veiculos_seminovos);
+        console.log(veiculos_novos);
+        console.log(veiculos_classicos); //exibe
+
+
+    </script>
