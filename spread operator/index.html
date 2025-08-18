@@ -1,0 +1,19 @@
+<script>
+    //serve trabalhar com arrays
+    const numeros1 = [1,2,3];
+    const numeros2 = [4,5,6];
+
+    //combinando valores usando spread
+    const todosNumeros = [...numeros1,...numeros2];
+
+    console.log(todosNumeros);
+    //saída:[1,2,3,4,5,6];
+
+    const copiarNumeros = [...numeros1];
+    console.log(copiarNumeros);
+    //saída:[1,2,3];
+
+    let copiaVinculada = numeros1; //estão vinculadas, se mudar um,muda o outro
+    console.log(copiaVinculada);
+
+</script>
